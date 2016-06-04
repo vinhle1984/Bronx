@@ -2,11 +2,13 @@
 Here is the assignment:
 
 
-What:
-I would state the purpose of our project here.
+#What:
+I would have the purpose statement here...
 
-Directory Structure:
-Explaining where to find all the files
 
-Process:
-Explaining the process of here. 
+#Directory Structure:
+Explaining where to find all the files...
+
+
+#Process:
+Explaining the process of here...
