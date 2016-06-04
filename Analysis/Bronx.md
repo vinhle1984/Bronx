@@ -58,9 +58,8 @@ library(gdata)
 #Mike's configuration
 # bk <- read.xls("C:/Users/Mike/OneDrive/Mike/Personal/MSDS/GIT/Bronx/Data/rollingsales_bronx.xls",pattern="BOROUGH",perl="C:/strawberry/perl/bin/perl.exe")
 
-
-#Mike's configuration
 bk <- read.xls("C:/Users/Mike/OneDrive/Mike/Personal/MSDS/GIT/Bronx/Data/rollingsales_bronx.xls",pattern="BOROUGH",perl="C:/strawberry/perl/bin/perl.exe")
+
 
 # So, save the file as a csv and use read.csv instead
 # bk <- read.csv("rollingsales_bronx.csv",skip=4,header=TRUE)
@@ -399,3 +398,8 @@ hist(log(bk.homes$sale.price.n))
 ```
 
 ![](Bronx_files/figure-html/unnamed-chunk-9-3.png)<!-- -->
+
+```r
+## store clean file
+write.table(bk.homes, "rollingsales_bronx_clean.csv", sep=",", append = FALSE)
+```

@@ -86,4 +86,6 @@ hist(log(bk.homes$gross.sqft))
 ##Histogram of sale price after log transformation
 hist(log(bk.homes$sale.price.n))
 
+## store clean file
+write.table(bk.homes, "rollingsales_bronx_clean.csv", sep=",", append = FALSE)
 ```
