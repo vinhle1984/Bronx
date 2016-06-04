@@ -17,7 +17,14 @@ library(gdata)
 ```{r}
 ## You need a perl interpreter to do this on Windows.
 ## It's automatic in Mac
+
+#Mike's configuration
+# bk <- read.xls("C:/Users/Mike/OneDrive/Mike/Personal/MSDS/GIT/Bronx/Data/rollingsales_bronx.xls",pattern="BOROUGH",perl="C:/strawberry/perl/bin/perl.exe")
+
+
+#Mike's configuration
 bk <- read.xls("rollingsales_bronx.xls",pattern="BOROUGH")
+
 # So, save the file as a csv and use read.csv instead
 # bk <- read.csv("rollingsales_bronx.csv",skip=4,header=TRUE)
 ```
@@ -77,4 +84,7 @@ summary(bk.homes[which(bk.homes$sale.price.n<100000),])
 bk.homes$outliers <- (log10(bk.homes$sale.price.n) <=5) + 0
 bk.homes <- bk.homes[which(bk.homes$outliers==0),]
 plot(log(bk.homes$gross.sqft),log(bk.homes$sale.price.n))
+
+
+
 ```
