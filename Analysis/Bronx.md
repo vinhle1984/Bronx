@@ -55,9 +55,13 @@ library(gdata)
 
 
 ```r
-## You need a perl interpreter to do this on Windows.
-## It's automatic in Mac
+#Mike's configuration
+# bk <- read.xls("C:/Users/Mike/OneDrive/Mike/Personal/MSDS/GIT/Bronx/Data/rollingsales_bronx.xls",pattern="BOROUGH",perl="C:/strawberry/perl/bin/perl.exe")
+
+
+#Mike's configuration
 bk <- read.xls("C:/Users/Mike/OneDrive/Mike/Personal/MSDS/GIT/Bronx/Data/rollingsales_bronx.xls",pattern="BOROUGH",perl="C:/strawberry/perl/bin/perl.exe")
+
 # So, save the file as a csv and use read.csv instead
 # bk <- read.csv("rollingsales_bronx.csv",skip=4,header=TRUE)
 ```
@@ -381,3 +385,17 @@ plot(log(bk.homes$gross.sqft),log(bk.homes$sale.price.n))
 ```
 
 ![](Bronx_files/figure-html/unnamed-chunk-9-1.png)<!-- -->
+
+```r
+##Histogram of square footage after log transformation
+hist(log(bk.homes$gross.sqft))
+```
+
+![](Bronx_files/figure-html/unnamed-chunk-9-2.png)<!-- -->
+
+```r
+##Histogram of sale price after log transformation
+hist(log(bk.homes$sale.price.n))
+```
+
+![](Bronx_files/figure-html/unnamed-chunk-9-3.png)<!-- -->
