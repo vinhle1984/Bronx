@@ -11,7 +11,7 @@ Explaining where to find all the files...
 
 
 ###Variables:
-Maybe list the variables here or in the analysis directory along with the codes 
+Maybe list the variables here or in the analysis directory along with the Bronx.rmd codes. 
 
 
 ###Process:
