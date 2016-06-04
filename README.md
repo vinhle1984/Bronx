@@ -10,6 +10,10 @@ I would have the purpose statement here...
 Explaining where to find all the files...
 
 
+###Variables:
+Maybe list the variables here or in the analysis directory along with the codes 
+
+
 ###Process:
 Explaining the process of here...
 
