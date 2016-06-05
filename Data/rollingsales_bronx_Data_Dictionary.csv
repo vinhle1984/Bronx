@@ -1,0 +1,22 @@
+Field,Description,Variable Type
+BOROUGH,Unique Identifier for Bronx burrough,Integer
+NEIGHBORHOOD,Neighborhood within burrough,Text
+BUILDING CLASS CATEGORY,"Categorization of Building Type (family dwelling, condo, garage, etc)",Varchar
+TAX CLASS AT PRESENT,Categorization of property tax type levied on property,Varchar
+BLOCK,Geographic data of location,Integer
+LOT,Geographic data of location,Integer
+EASE-MENT,Blank Field,??
+BUILDING CLASS AT PRESENT,Classification of building Type,Varchar
+ADDRESS,Physical address of property,Varchar
+APARTMENT NUMBER,Apartment number if applicable (condos and apartment properties),Varchar
+ZIP CODE,Postal Zip Code of property,Integer
+RESIDENTIAL UNITS,# of residential units on property,Integer
+COMMERCIAL UNITS,# of commercial units on property,Integer
+TOTAL UNITS,Sum of residential and commercial units,Integer
+LAND SQUARE FEET,square footage of land outside of building,Integer
+GROSS SQUARE FEET,sum of square footage of land and building,Integer
+YEAR BUILT,Date of construction,Integer
+TAX CLASS AT TIME OF SALE,Property tax classification,Integer
+BUILDING CLASS AT TIME OF SALE,Building classification,Varchar
+SALE PRICE,Last known sales price,Money
+SALE DATE,Date of last sale,Date

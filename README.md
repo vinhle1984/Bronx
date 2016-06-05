@@ -1,22 +1,22 @@
 # Bronx
-Here is the assignment:
+Created by Vinh Le, Mike Martos, Armand Post, Henry Boerner, Rajeev Kumar
 
 
-•	Using the Rolling Data Sales website, download and examine another housing sales data set (not the one we will use in live session, which is linked here - Rolling Housing Sales for NYC).
+###What:
+I would have the purpose statement here...
 
 
-•	Goal: Create an RStudio project for the analysis of this data set. Your file structure within the project should include the following:
-
-–	A README file in the project root directory that includes an explanation of the purpose of the project and the other files
-
-–	A data directory containing files to load in and clean up the data. The clean up should include finding out where there are outliers or missing values, deciding how you will treat them, making sure values you think are numerical are being treated as such (correct R class), etc.
-
-–	An Analysis directory containing a file (or files) for exploratory data analysis on the clean data to visualize compare the square footage and sales price for your neighborhood.
-
-–	A Paper directory containing a file (plain text or Markdown) that explains any meaningful patterns in this dataset.
+###Directory Structure:
+Explaining where to find all the files...
 
 
-•	Note: I am indifferent to the names of the directories as long as they a generally descriptive of the contents and follow naming conventions discussed in Gandrud.
+###Variables:
+Maybe list the variables here or in the analysis directory along with the Bronx.rmd codes. 
 
 
-•	Deliverable: A link to a repository on GitHub containing the above. I need only one link per group. Since this is a group project, I expect you to divide the labor.
+###Process:
+Explaining the process of here...
+
+
+###Conclusion
+Write up insights, conclusion, summary. Either have it here in the main Readme file or create another one in either of the other directory to summarize our results. 
