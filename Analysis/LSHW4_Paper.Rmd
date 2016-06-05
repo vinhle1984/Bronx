@@ -8,23 +8,15 @@ output:
   pdf_document: default
 ---
 
----
-title: "LiveSessionHW4 Bronx"
-author: "Vinh Le"
-date: "June 1, 2016"
-output:
-  html_document:
-    keep_md: yes
-  pdf_document: default
----
+
 
 ## Set working directory and load packages
 ```{r}
-require(gdata)
+##require(gdata)
 require(plyr) #Added by Monnie McGee
 #install the gdata and plyr packages and load in to R.
 library(plyr)
-library(gdata)
+##library(gdata)
 setwd("/SMU/Doing Data Science/Unit 4/Live Session Files")
 ```
 
@@ -83,7 +75,6 @@ plot(bk.homes$gross.sqft,bk.homes$sale.price.n,main="1,2, and 3 family homes, no
 ## Since the data appeared clustered above, we log transform the data and assess.
 ```{r}
 plot(log10(bk.homes$gross.sqft),log10(bk.homes$sale.price.n),main="Log Transformed, 1, 2, 3 Family Homes")
-summary(bk.homes[which(bk.homes$sale.price.n<100000),])
 ```
 
 
@@ -103,3 +94,15 @@ boxplot(sale.price.n~neighborhood,data=bk.homes)
 
 
 ## However since the number of neighboorhoods is large, data would become thin and difficult to assess.
+
+
+
+## Below we assess the Baychester neighboorhood and can more clearly see a positive relationship between home prices and sq ft.
+```{r}
+## for now, let's look at 1-, 2-, and 3-family homes at BAYCHESTER                                         
+bk.homes.baychester <- bk.homes[which(grepl("BAYCHESTER",bk.homes$neighborhood)),]
+
+plot(log(bk.homes.baychester$gross.sqft), log(bk.homes.baychester$sale.price.n),main="Baychester 1, 2 , & 3 family homes")
+
+## For home properties at BAYCHESTER, price of majority of properties increases with increase in their size. However, there are many properties, where prices either remain flat or decreased with increase in size.
+```
