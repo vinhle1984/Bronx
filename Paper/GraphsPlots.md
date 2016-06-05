@@ -134,7 +134,7 @@ plot(log10(bk.homes$gross.sqft),log10(bk.homes$sale.price.n))
 ![](GraphsPlots_files/figure-html/unnamed-chunk-6-1.png)<!-- -->
 
 ```r
-#From above graph, one can conclude that prices remain flat with size. However, there are many sales which doesn't look like actual sales.
+#From above graph, one can conclude that prices remain flat with increase in size. However, there are many sales which doesn't look like actual sales.
 
 summary(bk.homes[which(bk.homes$sale.price.n<100000),])
 ```
@@ -217,6 +217,7 @@ plot(log(bk.homes$gross.sqft),log(bk.homes$sale.price.n))
 ![](GraphsPlots_files/figure-html/unnamed-chunk-7-1.png)<!-- -->
 
 ```r
+## For home properties , price of majority of properties increases with increase in their size. However, there are many properties, where prices either remain flat or decreased with increase in size.
 summary(bk.homes[which(bk.homes$sale.price.n>=100000),])
 ```
 
@@ -303,10 +304,6 @@ summary(bk.homes[which(bk.homes$sale.price.n>=100000),])
 ## 
 ```
 
-```r
-## For home properties , price of majority of properties increases with increase in their flat size. However, there are many properties, where prices either remain flat or decreased with increase in flat size.
-```
-
 
 ```r
 ## for now, let's look at 1-, 2-, and 3-family homes at BAYCHESTER                                         
@@ -318,6 +315,7 @@ plot(log(bk.homes.baychester$gross.sqft), log(bk.homes.baychester$sale.price.n))
 ![](GraphsPlots_files/figure-html/unnamed-chunk-8-1.png)<!-- -->
 
 ```r
+## For home properties at BAYCHESTER, price of majority of properties increases with increase in their size. However, there are many properties, where prices either remain flat or decreased with increase in size.
 summary(bk.homes.baychester[which(bk.homes.baychester$sale.price.n>=100000),])
 ```
 
@@ -396,10 +394,6 @@ summary(bk.homes.baychester[which(bk.homes.baychester$sale.price.n>=100000),])
 ## 
 ```
 
-```r
-## For home properties at BAYCHESTER, price of majority of properties increases with increase in their flat size. However, there are many properties, where prices either remain flat or decreased with increase in flat size.
-```
-
 
 ```r
 ## for now, let's look at Rental Buildings
@@ -418,6 +412,7 @@ plot(log10(bk.rentals$gross.sqft),log10(bk.rentals$sale.price.n))
 ![](GraphsPlots_files/figure-html/unnamed-chunk-9-1.png)<!-- -->
 
 ```r
+## For rental properties, price of majority of properties increases with increase in their size.However, there are many sales which doesn't look like actual sales.
 summary(bk.rentals[which(bk.rentals$sale.price.n<100000),])
 ```
 
@@ -499,6 +494,7 @@ plot(log(bk.rentals$gross.sqft),log(bk.rentals$sale.price.n))
 ![](GraphsPlots_files/figure-html/unnamed-chunk-10-1.png)<!-- -->
 
 ```r
+## For rental properties, price of majority of properties increases with increase in their size. However, there are many properties, where prices either remain flat or decreased with increase in size.
 summary(bk.rentals[which(bk.rentals$sale.price.n>=100000),])
 ```
 
@@ -575,10 +571,6 @@ summary(bk.rentals[which(bk.rentals$sale.price.n>=100000),])
 ##  3rd Qu.:0  
 ##  Max.   :0  
 ## 
-```
-
-```r
-## For rental properties, price of majority of properties increases with increase in their flat size. However, there are many properties, where prices either remain flat or decreased with increase in flat size.
 ```
 
 
