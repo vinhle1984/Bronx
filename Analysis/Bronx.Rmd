@@ -1,6 +1,6 @@
 ---
 title: "LiveSessionHW4 Bronx"
-author: "Vinh Le, "
+author: "Vinh Le, Armand Post, Mike Martos, Jon Boerner, Rajeev Kumar"
 date: "June 1, 2016"
 output: 
   html_document:
