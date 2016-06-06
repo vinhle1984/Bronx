@@ -8,8 +8,7 @@ The purpose of this project is to demonstrate the use of R programming to format
     
 Objectives:
 
-    
-    	1. Use data-gathering makefiles to organize the data-gathering process so that the process can be completely reproduced
+  	1. Use data-gathering makefiles to organize the data-gathering process so that the process can be completely reproduced
 	
 	2. Apply proper documentation techniques for variables and code
 
