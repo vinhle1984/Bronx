@@ -49,4 +49,4 @@ Final steps included agreeing on the final directory structure of the Github rep
 
 
 ###Conclusion
-Write up insights, conclusion, summary. Either have it here in the main Readme file or create another one in either of the other directory to summarize our results. 
+R Programming was used to format a complex data set to something more useful to read. We were able to find the relationship between sales price and square footage. It became apparent after the clean up that as you increase square footage the sales price also increases. Github was also used to collaborate between the members of the group and we were able to complete all the objectives for this project. The data gathering process and comments on the code provided a way to make our work reproducible.  
