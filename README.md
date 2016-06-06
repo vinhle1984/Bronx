@@ -47,6 +47,8 @@ This folder has graphs that are generated for this project.
 
 For Code Book, please refer rollingsales_bronx_Data_Dictionary.csv under Data Subdirectory.
 
+https://github.com/vinhle1984/Bronx/blob/master/Data/rollingsales_bronx_Data_Dictionary.csv
+
 
 ###Process:
 The process for this project began with a discussion regarding the division of work.  One team member volunteered to host the Github repository where all work would be uploaded.  The repository was created and initial readme file created.  Bronx was chosen as the neighborhood and the provided .csv was assessed.  A data dictionary was created with variable descriptions and variable type for each column of the provided .csv.
