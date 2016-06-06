@@ -1,6 +1,6 @@
 ---
 title: "Live Session Unit 4 - 403"
-author: "Armand Post, Mike Martos, Vin Le, Rajeev Kumar"
+author: "Armand Post, Mike Martos, Vin Le, Rajeev Kumar, Henry Boerner"
 date: "June 4, 2016"
 output:
   html_document:
