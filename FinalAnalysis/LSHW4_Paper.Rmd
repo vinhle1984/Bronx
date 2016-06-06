@@ -1,5 +1,5 @@
 ---
-title: "LSHW4Paper"
+title: "Live Session Unit 4 - 403"
 author: "Armand Post, Mike Martos, Vin Le, Rajeev Kumar"
 date: "June 4, 2016"
 output:
@@ -13,10 +13,9 @@ output:
 ### Set working directory and load packages
 ```{r, Load_libraries}
 ##require(gdata)
-require(plyr) #Added by Monnie McGee
+require(plyr) 
 #install the gdata and plyr packages and load in to R.
 library(plyr)
-#setwd("/SMU/Doing Data Science/Unit 4/Live Session Files")
 ```
 
 
@@ -25,7 +24,7 @@ library(plyr)
 bk <- read.csv("../Data/rollingsales_bronx.csv",skip=4,header=TRUE)
 ```
 
-# make all variable names lower case
+###  Make all variable names lower case
 ```{r, To_lower_case}
 names(bk) <- tolower(names(bk)) 
 ```
@@ -43,7 +42,7 @@ bk$year.built <- as.numeric(as.character(bk$year.built))
 ```{r, Keep_only_sales}
 ## keep only the actual sales
 bk.sale <- bk[bk$sale.price.n!=0,]
-plot(bk.sale$gross.sqft,bk.sale$sale.price.n,main="Remove $0 sales")
+plot(bk.sale$gross.sqft,bk.sale$sale.price.n,main="Only sales")
 ```
 
 ### Since the data appeared clustered above, we log transform the data and assess.
@@ -63,7 +62,7 @@ bk.homes <- bk.sale[which(grepl("FAMILY",bk.sale$building.class.category)),]
 
 ### Below we see the data plotted with 1, 2, and 3 family homes plotted as gross square footage by sales price.
 ```{r, Plot_feet_price_nolog}
-plot(bk.homes$gross.sqft,bk.homes$sale.price.n,main="1,2, and 3 family homes, non log transformed")
+plot(bk.homes$gross.sqft,bk.homes$sale.price.n,main="1,2, and 3 family homes, no log transformation")
 ```
 
 ### Since the data appeared clustered above, we log transform the data and assess.

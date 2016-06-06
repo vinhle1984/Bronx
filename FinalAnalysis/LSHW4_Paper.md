@@ -1,4 +1,4 @@
-# LSHW4Paper
+# Live Session Unit 4 - 403
 Armand Post, Mike Martos, Vin Le, Rajeev Kumar  
 June 4, 2016  
 
@@ -8,7 +8,7 @@ June 4, 2016
 
 ```r
 ##require(gdata)
-require(plyr) #Added by Monnie McGee
+require(plyr) 
 ```
 
 ```
@@ -18,7 +18,6 @@ require(plyr) #Added by Monnie McGee
 ```r
 #install the gdata and plyr packages and load in to R.
 library(plyr)
-#setwd("/SMU/Doing Data Science/Unit 4/Live Session Files")
 ```
 
 
@@ -28,7 +27,7 @@ library(plyr)
 bk <- read.csv("../Data/rollingsales_bronx.csv",skip=4,header=TRUE)
 ```
 
-# make all variable names lower case
+###  Make all variable names lower case
 
 ```r
 names(bk) <- tolower(names(bk)) 
@@ -62,7 +61,7 @@ bk$year.built <- as.numeric(as.character(bk$year.built))
 ```r
 ## keep only the actual sales
 bk.sale <- bk[bk$sale.price.n!=0,]
-plot(bk.sale$gross.sqft,bk.sale$sale.price.n,main="Remove $0 sales")
+plot(bk.sale$gross.sqft,bk.sale$sale.price.n,main="Only sales")
 ```
 
 ![](LSHW4_Paper_files/figure-html/Keep_only_sales-1.png)<!-- -->
@@ -89,7 +88,7 @@ bk.homes <- bk.sale[which(grepl("FAMILY",bk.sale$building.class.category)),]
 ### Below we see the data plotted with 1, 2, and 3 family homes plotted as gross square footage by sales price.
 
 ```r
-plot(bk.homes$gross.sqft,bk.homes$sale.price.n,main="1,2, and 3 family homes, non log transformed")
+plot(bk.homes$gross.sqft,bk.homes$sale.price.n,main="1,2, and 3 family homes, no log transformation")
 ```
 
 ![](LSHW4_Paper_files/figure-html/Plot_feet_price_nolog-1.png)<!-- -->
