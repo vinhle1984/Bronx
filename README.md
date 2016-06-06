@@ -8,15 +8,19 @@ The purpose of this project is to demonstrate the use of R programming to format
     
 Objectives:
 
-  	1. Use data-gathering makefiles to organize the data-gathering process so that the process can be completely reproduced
+	1. Use of Dropbox and GitHub to make research accessible to others
 	
-	2. Apply proper documentation techniques for variables and code
+	2. Use of such services to back up files and make collaboration easier
+	
+	3. Demonstrate importance of version control
 
-	3. Load data from various sources, both locally from the computer and remotely from the Internet
+  	4. Use data-gathering makefiles to organize the data-gathering process so that the process can be completely reproduced
+	
+	5. Apply proper documentation techniques for variables and code
 
-	4. Define tidy data
+	6. Load data from various sources, both locally from the computer and remotely from the Internet
 	 
-	5. Use capabilities in R to create tidy data
+	7. Use capabilities in R to create tidy data
 
 
 
