@@ -1,9 +1,9 @@
 # Bronx
 Created by: Vinh Le, Mike Martos, Armand Post, Henry Boerner, Rajeev Kumar
 
-Data Science 6306 sect 403
+MSDS 6306 sect 403
 
-6/6/2016
+June 6 2016
 
 ###What:
 
