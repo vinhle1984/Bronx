@@ -1,0 +1,37 @@
+## However since the number of neighboorhoods is large, data would become thin and difficult to assess.
+
+
+
+## Below we assess three neighoorhoods (Baychester, Riverdale, Morris Park / Van Nest) and and can more clearly see a positive relationship between home prices and sq ft.
+```{r}
+## for now, let's look at 1-, 2-, and 3-family homes at BAYCHESTER                                         
+bk.homes.baychester <- bk.homes[which(grepl("BAYCHESTER",bk.homes$neighborhood)),]
+
+plot(log(bk.homes.baychester$gross.sqft), log(bk.homes.baychester$sale.price.n),main="Baychester 1, 2 , & 3 family homes")
+
+## For home properties at BAYCHESTER, price of majority of properties increases with increase in their size. However, there are many properties, where prices either remain flat or decreased with increase in size.
+```
+
+
+
+```{r}
+## for now, let's look at 1-, 2-, and 3-family homes at RIVERDALE                                         
+bk.homes.riverdale <- bk.homes[which(grepl("RIVERDALE",bk.homes$neighborhood)),]
+
+plot(log(bk.homes.riverdale$gross.sqft), log(bk.homes.riverdale$sale.price.n),main="Riverdale 1, 2 , & 3 family homes")
+
+## For home properties at RIVERDALE, price of majority of properties increases with increase in their size. However, there are many properties, where prices either remain flat or decreased with increase in size.
+```
+
+
+    
+
+
+```{r}
+## for now, let's look at 1-, 2-, and 3-family homes at MORRIS PARK/VAN NEST                                         
+bk.homes.MorrisParkVanNest <- bk.homes[which(grepl("MORRIS PARK/VAN NEST",bk.homes$neighborhood)),]
+
+plot(log(bk.homes.MorrisParkVanNest$gross.sqft), log(bk.homes.MorrisParkVanNest$sale.price.n),main="Morris Park / Van Nest 1, 2 , & 3 family homes")
+
+## For home properties at MORRIS PARK/VAN NEST, price of majority of properties increases with increase in their size. However, there are many properties, where prices either remain flat or decreased with increase in size.
+```
