@@ -6,7 +6,8 @@ Created by Vinh Le, Mike Martos, Armand Post, Henry Boerner, Rajeev Kumar
 
 The purpose of this project is to demonstrate the use of R programming to format and restructure complex data sets to find insights and draw conclusion.
     
-    Objectives:
+Objectives:
+
     
     	1. Use data-gathering makefiles to organize the data-gathering process so that the process can be completely reproduced
 	
